@@ -1,0 +1,10 @@
+{
+  "description": "Create personalized websites effortlessly with customizable styles tailored to your needs, perfect for businesses and individuals seeking a professional online presence.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

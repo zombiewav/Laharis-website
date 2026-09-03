@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+
+  --color-basalt: #0b0908;
+  --color-ash: #141110;
+  --color-ashcard: #1c1815;
+  --color-line: #322b26;
+  --color-ember: #e74d02;
+  --color-magma: #fcb42c;
+  --color-lava: #9a0000;
+  --color-rust: #b62602;
+  --color-smoke: #a99b90;
+  --color-bone: #efe7e0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-basalt);
+  color: var(--color-bone);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ember);
+  color: #0b0908;
+}
+
+/* Hide scrollbars until scrolling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: var(--color-line) transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 8px;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---- V2: glassmorphism + neumorphism helpers ---- */
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.glass-strong {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(30px) saturate(160%);
+  -webkit-backdrop-filter: blur(30px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.neu {
+  background: #191410;
+  box-shadow:
+    -7px -7px 16px rgba(58, 46, 38, 0.55),
+    7px 7px 18px rgba(0, 0, 0, 0.75);
+}
+.neu-inset {
+  background: #191410;
+  box-shadow:
+    inset -6px -6px 12px rgba(58, 46, 38, 0.5),
+    inset 6px 6px 14px rgba(0, 0, 0, 0.8);
+}
+.neu-pill {
+  background: #191410;
+  box-shadow:
+    -6px -6px 14px rgba(58, 46, 38, 0.5),
+    6px 6px 16px rgba(0, 0, 0, 0.75);
+}
+.neu-pill:active {
+  box-shadow:
+    inset -5px -5px 11px rgba(58, 46, 38, 0.5),
+    inset 5px 5px 13px rgba(0, 0, 0, 0.8);
+}
+@keyframes floatblob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -40px) scale(1.08);
+  }
+}
+.blob {
+  animation: floatblob 16s ease-in-out infinite;
+}
+
+/* ---- V5: scroll reveal + kinetic ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee 26s linear infinite;
+}
+@keyframes emberpulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.ember-dot {
+  animation: emberpulse 2.4s ease-in-out infinite;
+}
