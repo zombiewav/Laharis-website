@@ -75,6 +75,17 @@ function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
   );
 }
 
+const VALUES = [
+  "Inclusivity",
+  "Resilience",
+  "Trustworthiness",
+  "Transparency",
+  "Sustainability",
+  "Unwavering Integrity",
+  "Responsiveness",
+  "Resourcefulness",
+];
+
 const SERVICES = [
   ["Structural Design & Engineering", "Seismic and typhoon-resistant design for residential, commercial, and institutional buildings."],
   ["General Construction", "Building construction, site development, and post-disaster reconstruction."],
@@ -253,6 +264,19 @@ export default function V5Kinetic() {
                   The leading construction & design firm in Bicol — a model for
                   disaster-resilient building worldwide.
                 </p>
+              </div>
+              <div className="border border-line bg-ashcard p-6">
+                <div className="font-mono text-xs tracking-[0.2em] text-ember">CORE VALUES</div>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {VALUES.map((v) => (
+                    <span
+                      key={v}
+                      className="rounded-full border border-line px-3 py-1 font-mono text-[11px] tracking-wide text-smoke"
+                    >
+                      {v}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </Reveal>
