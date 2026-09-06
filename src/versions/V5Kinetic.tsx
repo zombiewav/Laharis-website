@@ -252,17 +252,17 @@ export default function V5Kinetic() {
           <Reveal delay={150} className="lg:col-span-5">
             <div className="grid gap-6">
               <div className="border border-line bg-ashcard p-6">
-                <div className="font-mono text-xs tracking-[0.2em] text-ember">MISSION</div>
-                <p className="mt-3 text-sm leading-relaxed text-smoke">
-                  Deliver services with integrity — engineering excellence, innovation, and
-                  environmental responsibility.
-                </p>
-              </div>
-              <div className="border border-line bg-ashcard p-6">
                 <div className="font-mono text-xs tracking-[0.2em] text-ember">VISION</div>
                 <p className="mt-3 text-sm leading-relaxed text-smoke">
                   The leading construction & design firm in Bicol — a model for
                   disaster-resilient building worldwide.
+                </p>
+              </div>
+              <div className="border border-line bg-ashcard p-6">
+                <div className="font-mono text-xs tracking-[0.2em] text-ember">MISSION</div>
+                <p className="mt-3 text-sm leading-relaxed text-smoke">
+                  Deliver services with integrity — engineering excellence, innovation, and
+                  environmental responsibility.
                 </p>
               </div>
               <div className="border border-line bg-ashcard p-6">
