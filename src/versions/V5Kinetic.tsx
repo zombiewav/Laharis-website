@@ -44,7 +44,7 @@ function Reveal({
   );
 }
 
-function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
+function Counter({ target, suffix = "", grouped = true }: { target: number; suffix?: string; grouped?: boolean }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [val, setVal] = useState(0);
   useEffect(() => {
@@ -69,7 +69,7 @@ function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
   }, [target]);
   return (
     <span ref={ref}>
-      {val.toLocaleString()}
+      {grouped ? val.toLocaleString() : val}
       {suffix}
     </span>
   );
@@ -209,7 +209,7 @@ export default function V5Kinetic() {
       <section className="mx-auto max-w-[1200px] px-6 py-24">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {[
-            [<Counter key="a" target={2026} />, "Founded — present"],
+            [<Counter key="a" target={2026} grouped={false} />, "Founded — present"],
             [<span key="b">Albay</span>, "& Bicol Region served"],
             [<Counter key="c" target={20000} />, "m³ ash recovered"],
             [<Counter key="d" target={60} suffix="%" />, "faster construction"],
