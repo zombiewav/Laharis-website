@@ -94,7 +94,7 @@ const STEPS = [
 const TEAM = [
   ["Administrative", ["Alena Amados — CEO / Engineering Manager", "Raymund Lemuel Lodana — Business Dev & Marketing"]],
   ["Planning", ["Jino Ogayon — Planning Director (Architect)", "Jheremy Bodollo — Surveyor (Geodetic Eng.)", "Jayian Ocsing — Planning Engineer"]],
-  ["Construction", ["Jonis Cantonjos — Project Manager (Civil Eng.)", "Lorraine Dugan — Operations Head (Civil Eng.)"]],
+  ["Construction", ["Jonis Cantonjos — Chief Operation Manager (Civil Eng.)", "Maria Lorraine Dugan — Project Manager (Civil Eng.)"]],
   ["Quality Control", ["Xander Lee Merca — QA & Safety Officer (Materials Eng.)"]],
   ["Accounting", ["Aliyah Anne P. Relorcasa — Finance Manager"]],
   ["Legal", ["Ian Renz Olive B. Arnasán — Legal Officer (Attorney)"]],
