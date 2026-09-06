@@ -144,3 +144,10 @@
 *.stl                filter=lfs diff=lfs merge=lfs -text
 *.nc                 filter=lfs diff=lfs merge=lfs -text
 *.mat                filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------------------------
+# public/ is served directly by the host (Vercel) — Vercel doesn't fetch Git
+# LFS objects on clone, so LFS-tracked files here would deploy as broken
+# pointer files instead of the real asset. Keep these as plain git blobs.
+# ---------------------------------------------------------------------------
+public/** !filter !diff !merge -text
