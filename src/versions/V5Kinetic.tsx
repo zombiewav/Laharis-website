@@ -113,7 +113,10 @@ export default function V5Kinetic() {
       {/* header */}
       <header className="fixed top-0 z-50 w-full border-b border-line/60 bg-basalt/70 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
-          <span className="font-mono text-xl font-extrabold tracking-tight">LAHARIS</span>
+          <a href="#" className="flex items-center gap-2.5">
+            <img src="/logo-mark.png" alt="" className="h-9 w-9" />
+            <span className="font-mono text-xl font-extrabold tracking-tight">LAHARIS</span>
+          </a>
           <nav className="hidden gap-7 md:flex">
             {NAV.map((n) => (
               <a key={n} href={`#k-${n.toLowerCase()}`} className="font-mono text-[13px] text-smoke transition-colors hover:text-magma">
@@ -401,7 +404,10 @@ export default function V5Kinetic() {
       {/* footer */}
       <footer className="border-t border-line bg-ash">
         <div className="mx-auto flex max-w-[1200px] flex-col justify-between gap-4 px-6 py-10 font-mono text-[11px] tracking-wider text-smoke sm:flex-row sm:items-center">
-          <span className="text-xl font-extrabold text-bone">LAHARIS</span>
+          <span className="flex items-center gap-2.5">
+            <img src="/logo-mark.png" alt="" className="h-8 w-8" />
+            <span className="text-xl font-extrabold text-bone">LAHARIS</span>
+          </span>
           <span>© 2026 LAHARIS. ALL RIGHTS RESERVED.</span>
           <span className="flex gap-5">
             <a href="#" className="hover:text-bone">TERMS</a>
