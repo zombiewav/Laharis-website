@@ -96,19 +96,19 @@ const SERVICES = [
 ];
 
 const STEPS = [
-  ["Recovery", "Ash collected from Mayon's post-eruption areas — cleanup burden becomes raw supply."],
+  ["Recovery", "Ash collected from Mayon's post-eruption areas, turning cleanup burden into raw supply."],
   ["Testing", "Every batch analyzed for grain size, chemistry, and reactivity in our own lab."],
-  ["Classification", "Sorted by grade — aggregate, cementitious, brick, fill, or specialty."],
+  ["Classification", "Sorted by grade: aggregate, cementitious, brick, fill, or specialty."],
   ["Valorization", "Manufactured into concrete, geopolymer cement, eco-bricks, and panels."],
 ];
 
 const TEAM = [
-  ["Administrative", ["Alena Amados — CEO / Engineering Manager", "Raymund Lemuel Lodana — Business Dev & Marketing"]],
-  ["Planning", ["Jino Ogayon — Planning Director (Architect)", "Jheremy Bodollo — Surveyor (Geodetic Eng.)", "Jayian Ocsing — Planning Engineer"]],
-  ["Construction", ["Jonis Cantonjos — Chief Operation Manager (Civil Eng.)", "Maria Lorraine Dugan — Project Manager (Civil Eng.)"]],
-  ["Quality Control", ["Xander Lee Merca — QA & Safety Officer (Materials Eng.)"]],
-  ["Accounting", ["Aliyah Anne P. Relorcasa — Finance Manager"]],
-  ["Legal", ["Ian Renz Olive B. Arnasán — Legal Officer (Attorney)"]],
+  ["Administrative", ["Alena Amados, CEO / Engineering Manager", "Raymund Lemuel Lodana, Business Dev & Marketing"]],
+  ["Planning", ["Jino Ogayon, Planning Director (Architect)", "Jheremy Bodollo, Surveyor (Geodetic Eng.)", "Jayian Ocsing, Planning Engineer"]],
+  ["Construction", ["Jonis Cantonjos, Chief Operation Manager (Civil Eng.)", "Maria Lorraine Dugan, Project Manager (Civil Eng.)"]],
+  ["Quality Control", ["Xander Lee Merca, QA & Safety Officer (Materials Eng.)"]],
+  ["Accounting", ["Aliyah Anne P. Relorcasa, Finance Manager"]],
+  ["Legal", ["Ian Renz Olive B. Arnasán, Legal Officer (Attorney)"]],
 ];
 
 export default function V5Kinetic() {
@@ -209,7 +209,7 @@ export default function V5Kinetic() {
       <section className="mx-auto max-w-[1200px] px-6 py-24">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {[
-            [<Counter key="a" target={2026} grouped={false} />, "Founded — present"],
+            [<Counter key="a" target={2026} grouped={false} />, "Founded to present"],
             [<span key="b">Albay</span>, "& Bicol Region served"],
             [<Counter key="c" target={20000} />, "m³ ash recovered"],
             [<Counter key="d" target={60} suffix="%" />, "faster construction"],
@@ -234,7 +234,7 @@ export default function V5Kinetic() {
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed text-smoke">
               <p>
-                LAHARIS is a construction and design company based in Legazpi, Albay —
+                LAHARIS is a construction and design company based in Legazpi, Albay,
                 founded on the principle that construction should be safe, sustainable,
                 and community-driven.
               </p>
@@ -244,7 +244,7 @@ export default function V5Kinetic() {
                 hazard into a resource.
               </p>
               <p className="border-l-2 border-ember pl-5 text-bone">
-                LAHARIS buildings are not just structures, but a symbol of resilience —
+                LAHARIS buildings are not just structures, but a symbol of resilience,
                 rising from the ashes of disaster.
               </p>
             </div>
@@ -254,14 +254,14 @@ export default function V5Kinetic() {
               <div className="border border-line bg-ashcard p-6">
                 <div className="font-mono text-xs tracking-[0.2em] text-ember">VISION</div>
                 <p className="mt-3 text-sm leading-relaxed text-smoke">
-                  The leading construction & design firm in Bicol — a model for
+                  The leading construction & design firm in Bicol, a model for
                   disaster-resilient building worldwide.
                 </p>
               </div>
               <div className="border border-line bg-ashcard p-6">
                 <div className="font-mono text-xs tracking-[0.2em] text-ember">MISSION</div>
                 <p className="mt-3 text-sm leading-relaxed text-smoke">
-                  Deliver services with integrity — engineering excellence, innovation, and
+                  Deliver services with integrity: engineering excellence, innovation, and
                   environmental responsibility.
                 </p>
               </div>
@@ -366,7 +366,7 @@ export default function V5Kinetic() {
                 <div className="font-mono text-xs tracking-[0.2em] text-ember">{(dept as string).toUpperCase()}</div>
                 <ul className="mt-4 space-y-3">
                   {(people as string[]).map((p) => {
-                    const [name, role] = p.split(" — ");
+                    const [name, role] = p.split(", ");
                     return (
                       <li key={p} className="border-l border-line pl-4">
                         <div className="text-sm font-semibold">{name}</div>
@@ -396,9 +396,9 @@ export default function V5Kinetic() {
                   Free initial consultations and assessments across Albay and the Bicol Region.
                 </p>
                 <div className="mt-8 space-y-3 font-mono text-sm text-smoke">
-                  <p><span className="text-ember">OFFICE</span> — EM&rsquo;s Barrio, Legazpi City, Albay 4500</p>
-                  <p><span className="text-ember">MOBILE</span> — 0956 314 2178</p>
-                  <p><span className="text-ember">EMAIL</span> — laharis.inc@gmail.com</p>
+                  <p><span className="text-ember">OFFICE</span>: EM&rsquo;s Barrio, Legazpi City, Albay 4500</p>
+                  <p><span className="text-ember">MOBILE</span>: 0956 314 2178</p>
+                  <p><span className="text-ember">EMAIL</span>: laharis.inc@gmail.com</p>
                 </div>
               </div>
               <div className="lg:col-span-7">
