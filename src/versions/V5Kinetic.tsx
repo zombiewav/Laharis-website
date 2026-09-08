@@ -154,7 +154,7 @@ export default function V5Kinetic() {
         >
           <Reveal>
             <div className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.28em] uppercase text-magma">
-              <span className="ember-dot h-1.5 w-1.5 rounded-full bg-magma" /> Est. 2026 · Legazpi, Albay
+              <span className="ember-dot h-1.5 w-1.5 rounded-full bg-magma" /> Est. 2018 · Legazpi, Albay
             </div>
           </Reveal>
           <Reveal delay={120}>
@@ -209,7 +209,7 @@ export default function V5Kinetic() {
       <section className="mx-auto max-w-[1200px] px-6 py-24">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {[
-            [<Counter key="a" target={2026} grouped={false} />, "Founded to present"],
+            [<Counter key="a" target={2018} grouped={false} />, "Founded to present"],
             [<span key="b">Albay</span>, "& Bicol Region served"],
             [<Counter key="c" target={20000} />, "m³ ash recovered"],
             [<Counter key="d" target={60} suffix="%" />, "faster construction"],
